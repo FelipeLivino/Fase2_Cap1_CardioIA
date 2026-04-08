@@ -34,8 +34,6 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     localStorage.removeItem('@CardioIA:token');
-    storageManager.removeItem('cardioia_patients');
-    storageManager.removeItem('cardioia_appointments');
     setUser(null);
   };
 
