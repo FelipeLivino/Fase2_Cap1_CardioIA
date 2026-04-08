@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import { storageManager } from '../utils/storageManager';
 
 export const AuthContext = createContext();
 
@@ -33,6 +34,8 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     localStorage.removeItem('@CardioIA:token');
+    storageManager.removeItem('cardioia_patients');
+    storageManager.removeItem('cardioia_appointments');
     setUser(null);
   };
 
