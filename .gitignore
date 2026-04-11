@@ -8,6 +8,7 @@
 /ir_alem_1/assets
 /ir_alem_1/node_modules
 /ir_alem_2/node_modules
+.claude/
 
 # testing
 /coverage
