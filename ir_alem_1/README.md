@@ -6,92 +6,103 @@
 
 <br>
 
-# Portal CardioIA - Fase 2
+# Portal CardioIA - Fase 2 (Frontend React)
 
 ## Nome do grupo
 
+Rumo ao NEXT
+
 ## 👨‍🎓 Integrantes:
 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- <a href="#">Felipe Livino dos Santos (RM 563187)</a>
+- <a href="#">Daniel Veiga Rodrigues de Faria (RM 561410)</a>
+- <a href="#">Tomas Haru Sakugawa Becker (RM 564147)</a>
+- <a href="#">Daniel Tavares de Lima Freitas (RM 562625)</a>
+- <a href="#">Gabriel Konno Carrozza (RM 564468)</a>
 
 ## 👩‍🏫 Professores:
 
 ### Tutor(a)
 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+- <a href="#">Caique Nonato da Silva Bezerra</a>
 
 ### Coordenador(a)
 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- <a href="#">ANDRÉ GODOI CHIOVATO</a>
 
 ## 📜 Descrição
 
-O **Portal CardioIA** é uma aplicação interativa de front-end desenvolvida como parte da atividade _Ir Além 1_ da Fase 2. A proposta principal deste portal é criar uma interface moderna, responsiva e esteticamente avançada, focada na visualização e gerenciamento simulado de pacientes e triagens na rotina de uma clínica de cardiologia inovadora. O projeto foi construído do zero utilizando as melhores práticas do ecossistema React com Vite, eliminando qualquer dependência de backend real por meio de interceptadores e abstrações nativas baseadas no navegador.
+O **Portal CardioIA** é um aplicativo responsivo desenvolvido para a atividade complementar da Fase 2. A centralidade do projeto foi focar exclusivamente na construção da interface, modelando de modo interativo um moderno painel front-end para rotinas do diagnóstico em cardiologia. Utilizamos para isso o ecossistema robusto do **React + Vite**, priorizando a componentização e dispensando infraestruturas reais de backend por meio de implementações dinâmicas baseadas nativamente no navegador.
 
-**Destaques Tecnológicos Incorporados:**
+Para sanar inteiramente as diretrizes exigidas pelos critérios de avaliação e o desafio de PBL da atividade, a aplicação entrega em sua arquitetura de forma bem-sucedida:
 
-- Logística de Autenticação Segura via **ContextAPI** avaliando mocks temporários em `@CardioIA:token`.
-- Criação de um utilitário exclusivo de modelagem de cache (`storageManager`) com ofuscação nativa via Base64, protegendo PII (Identidade do Paciente) direto no LocalStorage.
-- Fluxo de Agendamento dinâmico otimizado através de arquitetura `useReducer`.
-- UI/UX super contemporânea guiada através da suíte **Styled Components**, gerando CSS modular responsivo, com sistema de cores dark-theme em contraste com glassmorphism.
+- **Autenticação Simulada & Proteção:** Implantação de bloqueadores de rota (_Protected Routes_) assegurados pela **Context API** (AuthContext) e JWT Fakes armazenados localmente. Só é possível conferir as listagens se provocado o ambiente "logado".
+- **Listagem de Pacientes Dinâmica:** Consumo estruturado através de _fetch_ com APIs simuladas (`JSONPlaceholder`) permitindo resgatar mock-ups de clientes, interligados a um estado (_useState/useEffect_).
+- **Formulários e Reducers:** Rotas de captura ágil para de fluxo de Agendamento médico orquestrados nativamente via arquitetura complexa do Hook `useReducer`.
+- **Dashboard com Métricas Analíticas:** Contadores sintéticos e painéis numéricos gerenciais para visualizar estatísticas de "Pacientes", "Triagens" e "Agendamentos".
+- **Estética Customizada UI/UX:** Aplicação e padronização visual completa ancorada nos componentes do **Styled Components** aliando responsividade e modularidade CSS limpa.
+
+### 🎥 Demonstração de Funcionamento Completo (Vídeo)
+
+> O funcionamento final do portal (autenticação mockada, Dashboard, listagens) e o direcionamento visual do projeto em vídeo de até 4min podem ser validados no link não-listado a seguir:
+> **[INSIRA AQUI O LINK DO YOUTUBE]**
 
 ## 📁 Estrutura de pastas
+
+Sem dados de nuvem externa ou bancos sensíveis incluídos neste escopo, a divisão representa o estado exato de dependências para o Front:
 
 Dentre os arquivos e pastas presentes na raiz do projeto `ir_alem_1`, definem-se:
 
 - <b>node_modules</b>: Pasta gerada automaticamente que contém todas as bibliotecas e dependências de terceiros instaladas pelo NPM (como React, Styled-Components, React-Router-DOM).
 
 - <b>src</b>: Todo o código fonte fundamental criado para o desenvolvimento do projeto. Aqui habitam as sub-pastas estruturais da aplicação:
-  - <b>/components</b>: Peças de Interface de Usuário isoladas e reutilizáveis (como a `Navbar`).
-  - <b>/contexts</b>: Responsável pela lógica de estado global da aplicação. Hospeda o `AuthContext.jsx` que provê os tokens de acesso e regras de Login falso.
-  - <b>/pages</b>: As páginas que o roteador renderiza (ex: `Dashboard.jsx`, `Login.jsx`, `Patients.jsx`, `Schedule.jsx`).
-  - <b>/services</b>: Consumidores e abstrações de contato externo, como a `api.js` que faz _fetch_ mockado usando o JSONPlaceholder.
+  - <b>/components</b>: Peças de Interface de Usuário isoladas e reutilizáveis (como a Navbar e Cards).
+  - <b>/contexts</b>: Responsável pela lógica de estado global da aplicação. Hospeda o `AuthContext.jsx` que provê os tokens de acesso e regras de proteção de tela.
+  - <b>/pages</b>: As páginas que o roteador renderiza independentemente (ex: `Dashboard.jsx`, `Login.jsx`, `Patients.jsx`, `Schedule.jsx`).
+  - <b>/services</b>: Consumidores e abstrações de contato externo, como a ponte que faz o fetch simulado com o JSONPlaceholder.
   - <b>/utils</b>: Ferramentas auxiliares desconectadas de layout. Aloca o nosso potente gerador autônomo `storageManager.js`.
 
-- <b>index.html</b>: O ponto de entrada principal no navegador que hospeda o ID Root onde o React é montado em Single Page Application (SPA).
+- <b>index.html</b>: O ponto de entrada principal no navegador que hospeda a "div root" onde o React SPA é devidamente injetado.
 
-- <b>package.json</b>: O manifesto arquitetural da aplicação, descrevendo todas as dependências, versionamentos e scripts primários (como `dev` e `build`).
+- <b>package.json</b>: O manifesto arquitetural da aplicação, descrevendo as dependências, versionamentos e engatilhando os scripts primários (como vite dev).
 
 - <b>vite.config.js</b>: Arquivo de configuração que otimiza e aponta os plug-ins internos do motor de compilação ágil Vite.
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto do portal (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
 
-Para rodar essa simulação interativa da clínica perfeitamente em sua máquina, não é necessário rodar complexidades como Docker ou Bancos MYSQL, basta utilizar frameworks de empacotamento Node.
+Para rodar essa simulação interativa da clínica perfeitamente em sua máquina, não é necessário habilitar infraestruturas complexas como Docker ou MYSQL, basta utilizar frameworks de empacotamento NodeJS.
 
 **Pré-requisitos básicos**:  
-Necessário que a máquina possua o instalador Javascript **Node.js** (recomenda-se a variante `LTS`).
+Necessário que a máquina possua suporte Javascript nativo instalando o **Node.js** (recomenda-se a variante `LTS`).
 
-**Passo a passo a partir da sua IDE**:
+- minimo v24.12.0
 
-1. Clone e realize a extração deste repositório FIAP no seu ambiente local.
-2. Abra um terminal apontando para a raiz do repositório clonado e instale toda a malha de dependências requeridas utilizando NPM:
+**Passo a passo da Implementação e Start**:
+
+1. Clone ou baixe este repositório unificado FIAP no seu ambiente local. Acesse via terminal nativo a pasta do portal (`cd ir_alem_1`).
+2. Digite o respectivo comando para que o projeto baixe obrigatoriamente das nuvens os ecossistemas do React/Vite/Styled Components:
    ```bash
    npm install
    ```
-3. Com os pacotes firmemente consolidados, dispare o módulo empacotador do Vite que subirá o portal simultaneamente de forma otimizada para desenvolvedor:
+3. Com os pacotes listados na `node_modules` corretamente baixados, dispare o módulo empacotador do Vite:
    ```bash
    npm run dev
    ```
-4. No console abrirá uma demarcação contendo o end-point com sua porta gerada. Segure CTRL e clique nela (`http://localhost:5173/`).
-5. A tela de Login aparecerá. Simule sua entrada executiva através do credenciamento estático validado: **admin@cardioia.com** com a senha **123456**.
+4. No terminal aparecerá um link contendo sua porta local (geralmente alojada em `http://localhost:5173/`).
+5. A tela de Login aparecerá na aplicação Web. Simule sua entrada inicial de funcionário usando o credenciamento de verificação estático: **admin@cardioia.com** com a senha **123456**.
 
 ## 🗃 Histórico de lançamentos
 
 - 1.0.0 - 07/04/2026
-  - Transição da base e re-arquitetura total de cache para protocolo de StorageManager Blindado.
-  - Implementação completa de Modal CRUD na listagem de pacientes.
+  - Transição da base e re-arquitetura total de cache para protocolo de StorageManager, reajustes nos Requisitos Avaliativos.
 - 0.3.0 - 06/04/2026
-  - Expansão analítica nas métricas isoladas no Dashboard (`Agendado`, `Triagem`, `Alertas`, etc).
+  - Expansão analítica nas métricas isoladas no Dashboard (`Agendado`, `Triagem`, `Alertas`, etc). Formulários em Reducers mapeados.
 - 0.2.0 - 03/04/2026
-  - Setup unificado do JSX reativo mapeado provindo de requisições mockadas limitadamente usando `fetch()`. AuthContext inserido.
+  - Setup unificado do JSX reativo mapeado provindo de requisições mockadas limitadamente usando API Fictícia. AuthContext inserido firmemente.
 - 0.1.0 - 02/04/2026
-  - Inicialização oficial repositório.
+  - Inicialização oficial repositório (React + Vite) + Styled Components.
 
 ## 📋 Licença
 
