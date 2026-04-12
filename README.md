@@ -8,7 +8,7 @@
 
 # Nome do projeto
 
-# CardioIA - Fase 2: Diagnóstico e Triagem com Inteligência Artificial
+CardioIA - Fase 2: Diagnóstico e Triagem com Inteligência Artificial
 
 ## Nome do grupo
 
