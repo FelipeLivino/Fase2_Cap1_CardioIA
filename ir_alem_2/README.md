@@ -49,7 +49,6 @@ Para satisfazer 100% dos requisitos clínicos exigidos da atividade de "Ir Além
 
 Pautados pelas boas métricas de documentação, as subpastas desta documentação de classificador visual MLP (`ir_alem_2`) hospedam:
 
-- <b>assets/</b>: Pasta de arquivos estruturais pequenos para abastecer a simulação da documentação gráfica do repositório, comportando pequenas parcelas sintéticas dos arquivos simuladores seletos em CSV.
 - <b>classificador_ecg.ipynb</b>: O Jupyter Notebook mestre hospedando por inteiro a arquitetura codificada. Nele você poderá navegar da requisição do dataset hospedado externamente, os códigos comentados funcionais de normalização fotográfica das imagens (pré-processamento cinzento) à efetiva execução da árvore perceptron, Keras e tabelas quantitativas das testagens.
 - <b>exemplo_ecg.png</b>: Um demonstrativo de artefato (Snapshot Visual) processado, validando e emulando que os sinais frios do vetor foram corretamente traduzidos para uma imagem gráfica compatível com as ferramentas antes de ingressarem no cérebro da rede neural.
 - <b>README.md</b>: arquivo de apresentação que serve como guia do projeto (o mesmo que você está lendo agora).
