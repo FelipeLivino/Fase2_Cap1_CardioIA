@@ -43,7 +43,7 @@ Para satisfazer 100% dos requisitos clínicos exigidos da atividade de "Ir Além
 ### 🎥 Demonstração de Funcionamento Completo (Vídeo)
 
 > O funcionamento final do classificador visual contendo detalhamentos dos outputs do código pelo time nas classificações de ritmo em um pitch de 4min foi disponibilizado a seguir:
-> **[INSIRA AQUI O LINK DO YOUTUBE NÃO-LISTADO]**
+> **[https://youtu.be/iRbvam1E0PM]**
 
 ## 📁 Estrutura de pastas
 
