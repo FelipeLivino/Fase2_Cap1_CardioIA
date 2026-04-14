@@ -48,7 +48,7 @@ Todos esses passos combinam criatividade orgânica e dados bem-organizados e ilu
 
 ### 🎥 Demonstração de Funcionamento Completo (Vídeo)
 
-> O funcionamento final do protótipo contendo a explicação da triagem pela solução do modelo pode ser conferido em: **[INSIRA AQUI O LINK DO YOUTUBE]**
+> O funcionamento final do protótipo contendo a explicação da triagem pela solução do modelo pode ser conferido em: **[https://youtu.be/8in6x4p6Z3A]**
 
 ## 📁 Estrutura de pastas
 
