@@ -45,7 +45,7 @@ Para sanar inteiramente as diretrizes exigidas pelos critérios de avaliação e
 ### 🎥 Demonstração de Funcionamento Completo (Vídeo)
 
 > O funcionamento final do portal (autenticação mockada, Dashboard, listagens) e o direcionamento visual do projeto em vídeo de até 4min podem ser validados no link não-listado a seguir:
-> **[INSIRA AQUI O LINK DO YOUTUBE]**
+> **[https://youtu.be/mMAQkA9XHW0]**
 
 ## 📁 Estrutura de pastas
 
